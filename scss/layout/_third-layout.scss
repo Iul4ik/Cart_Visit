@@ -1,0 +1,483 @@
+a {
+  text-decoration: none;
+}
+
+// /*Header*/
+.third-header {
+  display: -webkit-box; /*старые браузеры - сафари */ 
+  display: -ms-flexbox; /*старые браузеры - internet explorer 10*/
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify; /*старые браузеры - сафари */ 
+  justify-content: space-between; /*старые браузеры - internet explorer 10*/
+  -webkit-box-align: center;
+  -ms-flex-align: center; /*старые браузеры - сафари */
+  align-items: center; /*старые браузеры - internet explorer 10*/
+  margin: 0 auto;
+  padding: 33px 15px;
+  background-color: white;
+  width: 100%;
+  
+}
+
+// /*header-menu*/
+.nav {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+// /*menu-item*/
+.nav_item {
+  margin-left: 4.5rem;
+}
+
+.nav_item:first-child{
+  margin-left: 0;
+}
+
+.nav_item:last-child {
+  margin-left: 2.5rem;
+}
+
+.nav_link {
+  color:#100A30;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav_btn {
+  font-size: 1.4rem;
+  background-color: #624DE3;
+  color: #FFF;
+  text-decoration: none;
+  padding: 1.6rem 2.6rem;
+  border-radius: .6rem;
+}
+
+.nav_activ:hover {
+  color:#624DE3;
+}
+
+.nav_activ:active {
+  color: #624DE3;
+}
+
+// /*container*/
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// /*banner*/
+.banner-thirt {
+  text-align: center;
+  background-color: #100A30;
+  color: #FFF;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+  height: 110rem;
+}
+
+.banner_title {
+  font-size: 5rem;
+  font-weight: 400;
+  max-width: 550px;
+  margin: 0 auto 3.1rem;
+  padding-top: 10rem;
+}
+
+.banner_img {
+  height: 900px;
+  background-image: url(/images/png/third-layout/banner.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.banner_text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.btn_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.btn_group_btn {
+  border: 1px solid #FFF;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: 1.7rem 3.7rem;
+  color: #FFF;
+  border-radius: .6rem;
+  margin: 0 .8rem;
+
+  &:hover {
+    background-color: #624DE3;
+    border: 1px solid #624DE3;
+  }
+}
+
+.btn_group_btn_main {
+  font-size: 1.5rem;
+  background-color: #624DE3;
+  border: 1px solid #624DE3;
+  
+  &:hover {
+    background-color: transparent;
+    border: 1px solid white;
+  
+  }
+}
+
+// /*tarif-section*/
+.section-thirt {
+  padding-top: 214px;
+}
+
+.section_title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #100A30;
+}
+
+.tarif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.tarif_item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 32%;
+  flex: 0 0 32%;
+}
+
+.tarif_item_01 .tarif_header {
+  background-image: url(/images/svg/third-layout/tarif_1.svg);
+}
+
+.tarif_item_01 .tarif_list_item {
+  list-style-image: url(/images/svg/third-layout/check_1.svg);
+}
+
+.tarif_item_01 .tarif_footer {
+  background-color: rgba(16, 10, 48, 0.03);
+}
+
+.tarif_item_02 .tarif_header {
+  background-image: url(/images/svg/third-layout/tarif_2.svg);
+
+}
+
+.tarif_item_02 .tarif_list_item {
+  list-style-image: url(/images/svg/third-layout/check_2.svg);
+
+}
+
+.tarif_item_02 .tarif_footer {
+  background-color: rgba(25, 199, 135, 0.05);
+}
+
+.tarif_item_03 .tarif_header {
+  background-image: url(/images/svg/third-layout/tarif_3.svg);
+}
+
+.tarif_item_03 .tarif_list_item {
+  list-style-image: url(/images/svg/third-layout/check_3.svg);
+}
+
+.tarif_item_03 .tarif_footer {
+  background-color: rgba(252, 185, 52, 0.05);
+}
+
+.tarif_header {
+  padding-top: 17rem;
+  background-position:0 center;
+  border-radius: .8rem .8rem 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tarif_info {
+  background-color: #100A30;
+  color:#FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 4rem 3rem 2.7rem;
+  position: relative;
+}
+
+.tarif_info_title  {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0 0 1rem;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.tarif_item_01 .tarif_info_title {
+  color: #FFF;
+}
+
+.tarif_item_02 .tarif_info_title {
+  color:  #19C787;
+}
+
+.tarif_item_03 .tarif_info_title {
+  color: #FF9F1C;
+}
+
+.tarif_list {
+  position:relative;
+  margin: 0;
+  padding: .6rem 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  color: #100A30;
+}
+
+.tarif_info_price {
+  font-size: 4.8rem;
+  margin: 0;
+}
+
+.tarif_info_price span {
+  font-size: 1.5rem;
+}
+
+.tarif_item_01 .tarif_info_price span {
+  opacity: 0;
+}
+
+.tarif_logo {
+  position: absolute;
+  bottom: 100px;
+}
+
+.tarif_footer {
+  border-radius: 0 0 .8rem .8rem;
+}
+
+.tarif_list_item {
+  margin: 2rem;
+  padding-left: 3.6rem;
+  line-height: 1.8rem;
+  list-style-position: inside;
+}
+
+.mentions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  max-height: 90rem;
+}
+
+.mentions_title {
+  font-size: 3rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 3rem .1rem 8.1rem;
+}
+
+.mentions_box {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2rem;
+  max-width: 60rem;
+  border-radius: .6rem;
+  margin-bottom: 2rem;
+}
+
+.mentions_box_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mentions_box_user {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2.5rem;
+}
+
+.mentions_box_address {
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4rem;
+  color: #4c4764;
+}
+
+.mentions_box_social {
+  margin-left: auto;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.mentions_box_text {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color:#4c4764;
+}
+
+.mentions_box_view {
+  font-weight: bold;
+  margin: 2rem 0 0;
+  font-size: 1.7rem;
+}
+
+.mentions_box_view > a {
+  color: #000;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.mentions_box_01 {
+  background-color: #e8e5fb;
+}
+
+.mentions_box_02 {
+  background-color: #e8faf3;
+}
+
+.mentions_box_03 {
+  background-color: #fdebee;
+}
+
+.mentions_box_04 {
+  background-color: #e6f3ff;
+}
+
+.mentions_box_05 {
+  background-color: #fff5e1;
+}
+
+footer {
+  background: #f8f8f9;
+  overflow: hidden;
+  display: block;
+}
+
+.footer-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 125rem;
+  padding: 5.5rem 0 5.7rem;
+}
+
+.footer_item {
+  min-width: 20rem;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer_slogan {
+  margin: 2rem 0 2.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.18px;
+  font-size: 18px;
+  color:#4c4764;
+}
+
+.footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.footer_social > a {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer_social > a:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.footer_list_header {
+  font-size: 1.6rem;
+  margin: .2rem 0 1.2rem;
+}
+
+.footer_list {
+  list-style: none;
+  margin-top: .8rem;
+  padding-left: 0;
+}
+
+.footer_list_item {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  color:#4c4764;
+}
+
+.footer_list_item > a {
+-webkit-transition: color .2s;
+transition: color .2s;
+color:#4c4764;
+}
+
+.footer_list_item > a:hover {
+  color: #624de3;
+}
+

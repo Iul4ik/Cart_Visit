@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap&family=Nunito+Sans&family=Play:wght@700&subset=cyrillic-ext");
+
+
+$fontFamily: "Roboto";
+$maxWidth: 1400;
+$maxWidthContainer: 1180;
+
+
+
+
+._container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+  // @media  (max-width: $md1+px) {
+    // max-width: 970px;
+  // }
+// 
+  // @media  (max-width: $md2+px) {
+    // max-width: 750px;
+  // }
+// 
+  // @media  (max-width: $md3+px) {
+    // max-width: none;
+    // padding: 0 10px;
+  // }
+

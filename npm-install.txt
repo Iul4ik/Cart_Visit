@@ -1,0 +1,116 @@
+1: node -v == (verificam versiunea NodeJS);
+2: npm -v == (verificam versiunea npm);
+3: npm init == (creeam un pachet)
+4: copiem in package.json acest pachet ==
+ {
+  "name": "css_advanced",
+  "version": "1.0.0",
+  "description": "CSS Advanced course for Cracea Alexandru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch"
+  },
+  "author": "Cracea Alexandru",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "breakpoint-sass": "^2.7.1",
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pxtorem": "^3.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.6.0",
+    "sass": "^1.50.0",
+    "select2": "^4.1.0-rc.0",
+    "swiper": "^8.1.4",
+    "tippy.js": "^6.3.7"
+  }
+}
+5: npm install --save gulp == (instaleaza si salveaza pachetul node_modules)
+6: npm install == (instaleaza schimbarea package.json)
+7: creeam <gulpfile.js> si introducem codul dat 
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const browserSync = require('browser-sync').create();
+const pxtorem = require('gulp-pxtorem');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+//compile scss into css
+function style() {
+    return gulp.src('./scss/**/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error',sass.logError))
+    .pipe(autoprefixer())
+    .pipe(pxtorem())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
+}
+function watch() {
+    browserSync.init({
+        server: {
+           baseDir: "./",
+           index: "./index.html"
+        }
+    });
+    gulp.watch('./scss/**/*.scss', style)
+    gulp.watch('./*.html').on('change', browserSync.reload);
+    gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+}
+exports.style = style;
+exports.watch = watch;
+8: creeam toate mapele necesare("img","js","fonts",...) si creeam un file "SCSS"
+9: npm run start == (ruleaza comanda si executa deschiderea portului)
+10: creeam reset.scss si introducem codul dat 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+11: conectam toate scss la main.scss

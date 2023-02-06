@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <title>Cart-visit</title>
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="tab">
+      <button class="tablinks" onclick="openAcorddeon(event, 'Introduction')" id="defaultOpen">Introduction</button>
+      <button class="accordion">Layout</button>
+        <div class="panel">
+          <button class="tablinks" onclick="openAcorddeon(event, 'firstLayout')">First</button>
+          <button class="tablinks" onclick="openAcorddeon(event, 'secondLayout')">Second</button>
+          <button class="tablinks" onclick="openAcorddeon(event, 'thirdLayout')">Third</button>
+        </div>
+      <button class="accordion">Sites</button>
+        <div class="panel">
+          <button class="tablinks" onclick="openAcorddeon(event, 'firstSite')" >First</button>
+          <!-- <button class="tablinks" onclick="openAcorddeon(event, 'secondSite')">Second</button> -->
+          <!-- <button class="tablinks" onclick="openAcorddeon(event, 'thirdSite')">Third</button> -->
+        </div>
+      <button class="accordion">Application</button>
+        <div class="panel">
+          <button class="tablinks" onclick="openAcorddeon(event, 'firstApplication')">First</button>
+          <button class="tablinks" onclick="openAcorddeon(event, 'secondApplication')">Second</button>
+          <button class="tablinks" onclick="openAcorddeon(event, 'thirdApplication')">Third</button>
+        </div>
+      <button class="tablinks" onclick="openAcorddeon(event, 'Hobbies')">Hobby</button>
+      <!-- <button class="tablinks" onclick="openAcorddeon(event, 'Contact')">Contact</button> -->
+    </div>
+    <!-- Acest Capitol este despre introducere -->
+    <div id="Introduction" class="tabcontent introduction">
+      <div class="box-title">
+        <h3>Introduction</h3>
+        <p>This chapter is about me, my goals and my CV</p>
+      </div>
+        <p>Hello, Welcome to my site, my name is Iulian and I am a Frontend developer, I am glad and grateful that you have visited this site</p>
+        <div class="cv">
+          <div class="cv-left">
+            <img  class="cv-left_img" src="images/png/eu.jpg" alt="Me">
+            <h2 class="cv-left_name">Iulian Catana</h2>
+            <h5>Date of birth: 03/07/1999</h5>
+            <h5> Nationality: Moldovan</h5>
+            <h2 class="cv-left_name">CONTACT</h2>
+            <div class="cv-left_contact">
+              <a href="#"><img class="cv-left_icon" src="images/svg/marker.svg" alt="icon-location"></a>
+              <a href="#">Chisinau, Moldova (Home)</a>
+            </div>
+            <div class="cv-left_contact">
+              <a href="#"><img class="cv-left_icon" src="images/svg/envelope.svg" alt="icon-email"></a>
+              <a href="#">catana.iulian@mail.ru</a>
+            </div>
+            <div class="cv-left_contact">
+              <a href="#"><img class="cv-left_icon" src="images/svg/phone-call.svg" alt="icon-call"></a>
+              <a href="#"> (+373) 62039111 </a>
+            </div>
+          </div>
+          <div class="cv-right">
+            <h2 class="cv-right_name">WORK EXPERIENCE</h2>
+            <h3 class="cv-right_description">Frontend Development </h3>
+            <p class="cv-right_text">I'm looking for work, I think work should bring you pleasure and I get
+            pleasure from what I do,because I have the desire, diligence, logic, and
+            knowledge in this field responsibilities.I am beginner programmer with no work experience.Everyhing that I studied - used for self-purposes or
+            for the purposes of a training couirse
+            I study in depth React JS and every day I learn something new, because
+            the key to success is knowledge</p>
+            <h2 class="cv-right_name">EDUCATION AND TRAINING</h2>
+            <p class="cv-right_data"><b>14/09/2022 – 15/12/2022</b> Chisinau, Moldova</p> 
+            <h3 class="cv-right_description"><b>Frontend Development</b> Interportal </h3>
+            <p class="cv-right_addres"><b>Address</b> Bulevardul Ștefan cel Mare și Sfînt 65, Молдова, Chisinau, Moldova</p> 
+            <p class="cv-right_addres"><b>Website</b> <a href="https://cursuri-it.md/">https://cursuri-it.md/</a></p>
+            <p class="cv-right_data"><b>07/03/2021 – 07/08/2021</b> Chisinau, Moldova</p>
+             <h3 class="cv-right_description"><b>Frontend Development</b> Step It Academy</h3>
+             <p class="cv-right_addres"><b>Address</b> birou 300, Bulevardul Decebal 139, Chișinău 2060, Молдова, Chisinau,Moldova</p>
+              <p class="cv-right_addres"><b> Website</b> <a href=""> https://itstep.md/</a></p>
+             <p class="cv-right_data"><b>02/09/2018 – 30/05/2022</b> Chisinau, Moldova</p>
+             <h3 class="cv-right_description"><b>Business and Administration</b> Technical University of
+              Moldova</h3> 
+            <p class="cv-right_addres"><b>Address</b> Bulevardul Dacia 41 Bloc 9 si 10, Chișinău, Молдова, Chisinau, Moldova</p>
+            <p class="cv-right_addres"><b>Website</b><a href="https://utm.md"> https://utm.md</a></p>
+            <h2 class="cv-right_name">LANGUAGE SKILLS</h2>
+              <h3 class="cv-right_description"><b>MOTHER TONGUE(S):</b> Romanian | Russian</h3> 
+              <h3 class="cv-right_description"><b>Other language(s):</b></h3> 
+              <h3 class="cv-right_description"><b>English</b></h3>
+              <div class="cv-right_language">
+                <div>
+                  <p><b>Listening</b></p>
+                  <p>B1</p>
+                </div>
+                <div>
+                  <p><b>Reading</b></p>
+                  <p>B1</p>
+                </div>
+                <div>
+                  <p><b>Spoken production</b></p>
+                  <p>B1</p>
+                </div>
+                <div>
+                  <p><b>Spoken interaction</b></p>
+                  <p>B1</p>
+                </div>
+                <div>
+                  <p><b>Writing</b></p>
+                  <p>B1</p>
+                </div>
+              </div>
+              <hr>
+             <h2 class="cv-right_name">DIGITAL SKILLS</h2>
+            <h3 class="cv-right_description"><b>TEHNICAL SKILLS</b></h3>
+               <p class="cv-right_text">JavaScript | HTML(BEM methodology) | CSS(Sass, Less) and Making
+                layouts (Floats,Positionning, Display, Box Model,CSS Grid,Flex Box) | React | GitHub and Git version control system Package manager | npm and
+                yarn(NodeJS) | Responsive/Adaptive Design | Gulp | Figma, Adobe
+                Photoshop, Avocode </p>
+             <h3 class="cv-right_description"><b>SOFT SKILLS</b></h3>
+              <p class="cv-right_text">I have a number of personal qualities such as dilligence,responsibility, ho
+                nesty, respect for personal borders, self-development, good orator, acting
+                hobby and musical instruments I am a multifaceted man. I strive to bring
+                success to the company by developing a specific IT solution that solves
+                the technical problems commonly encountered by users. .I am a team player who is open to change and is an excellent problem solver both on
+                my own and in a team, I can assure you that I can be a useful talent for the
+                company driving license category B and H. I have the car</p> 
+          </div> 
+        </div> 
+    </div>
+    <!-- Acest Capitol este despre Layout -->
+    <!-- Acest Capitol este despre firstLayout -->
+    <div id="firstLayout" class="tabcontent first-layout">
+      <div class="header">
+        <div class="container navigation">
+          <a href="#"><div class="container navigation a">ARC</div></a>
+          <ul class="main-menu">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <button class="button btn_header">Sign In</button>
+        </div> 
+      </div>
+      <div class="banner top_div group_9">
+        <div class="container">
+          <div class="logo_title">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="white" stroke-opacity="0.300385"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1983 12V13.7067C24.9655 13.6593 24.7244 13.6341 24.4774 13.6341C24.2304 13.6341 23.9893 13.6593 23.7565 13.7067V12H25.1983ZM24.448 21.1005L23.3996 23.7708V23.7708H19.5545L21.4966 18.9237C22.1225 19.889 23.2243 20.5315 24.4774 20.5315C25.7069 20.5315 26.791 19.913 27.4226 18.9779L29.3442 23.7708H25.4974L24.448 21.1005ZM26.5633 17.0828C26.5633 18.2091 25.6294 19.1221 24.4774 19.1221C23.3254 19.1221 22.3915 18.2091 22.3915 17.0828C22.3915 15.9566 23.3254 15.0436 24.4774 15.0436C25.6294 15.0436 26.5633 15.9566 26.5633 17.0828ZM16.2527 26.5842V25.1803H33V26.5842H30.4722L32.8945 32.6258L31.9227 32.9992L32.901 35.4293L31.5594 35.9455L30.5809 33.5147L29.4913 33.9332L26.6031 26.5842H25.1983V28.3682H23.7565V26.5842H22.2951L19.4098 33.9332L18.3391 33.5219L17.3416 36L16 35.4838L16.9972 33.0064L16.0064 32.6258L18.4272 26.5842H16.2527Z" fill="white"/>
+            </svg>
+            <p class="logo_text">ARHITECT</p>
+          </div>
+          <h1 class="logo_text_h1">Architecture Solutions</h1> 
+          <p class="logo_text_p">And of a deep dark blue spectacle before us was indeed sublime.</p> 
+          <button class="button btn_1"><span>Explore More</span></button>
+        </div>
+      </div>
+      <div class="about section section--white">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img class="img-3" src="images\png\first-layout\Mask_2.jpg" alt="">  
+            </div>
+            <div class="col-1"></div>
+            <div class="col-5">
+              <div class="text-about">
+                <div class="icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="46.548" height="47" rx="23.274" stroke="#EF6039" stroke-opacity="0.300385"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M33.6798 34.2069V31.7304C34.2022 31.4223 34.5083 30.8472 34.4723 30.2414C34.4723 29.3654 33.9402 28.6552 33.2836 28.6552C32.6269 28.6552 32.0949 29.3654 32.0949 30.2414C32.0589 30.8472 32.365 31.4223 32.8873 31.7304V34.2069H30.1137V22.1589L27.7363 20.9693V23.1034H28.925V23.8966H27.7363V25.4828H28.925V26.2759H27.7363V27.8621H28.925V28.6552H27.7363V30.2414H28.925V31.0345H27.7363V32.6207H28.925V33.4138H27.7363V34.2069H26.9438V18.2472L22.189 16.888V18.3448H24.9627V19.1379H22.189V20.7241H24.9627V21.5172H22.189V23.1034H24.9627V23.8966H22.189V25.4828H24.9627V26.2759H22.189V27.8621H24.9627V28.6552H22.189V30.2414H24.9627V31.0345H22.189V32.6207H24.9627V33.4138H22.189V34.2069H21.3966V12H14.2644V13.5862H17.8305V14.3793H14.2644V15.9655H17.8305V16.7586H14.2644V18.3448H17.8305V19.1379H14.2644V20.7241H17.8305V21.5172H14.2644V23.1034H17.8305V23.8966H14.2644V25.4828H17.8305V26.2759H14.2644V27.8621H17.8305V28.6552H14.2644V30.2414H17.8305V31.0345H14.2644V32.6207H17.8305V33.4138H14.2644V34.2069H11.887V35H35.661V34.2069H33.6798Z" fill="#EF6039"/>
+                  </svg>
+                  <div class="text_icons">
+                    <p>ABOUT</p>
+                  </div>
+                </div> 
+                <p class="text-about_1">Highest Quality Exterior Design</p>
+                <p class="text-about_2">Sky was of a deep dark blue spectacle before us was indeed sublime.</p>
+                <p class="text-about_3">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about.</p>
+                <button class="button btn_1"><span>Learn More</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team section section--white">
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <div class="experts-block">
+                <div class="container">
+                  <div class="meet">
+                    <div class="icon_1">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#EF6039" stroke-opacity="0.300385"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M28 17.1905C28 19.5048 26.2091 21.381 24 21.381C21.7909 21.381 20 19.5048 20 17.1905C20 14.8761 21.7909 13 24 13C26.2091 13 28 14.8761 28 17.1905ZM17 22.4286C18.6569 22.4286 20 21.0215 20 19.2857C20 17.55 18.6569 16.1429 17 16.1429C15.3431 16.1429 14 17.55 14 19.2857C14 21.0215 15.3431 22.4286 17 22.4286ZM31 22.4286C32.6569 22.4286 34 21.0215 34 19.2857C34 17.55 32.6569 16.1429 31 16.1429C29.3431 16.1429 28 17.55 28 19.2857C28 21.0215 29.3431 22.4286 31 22.4286ZM30.4625 23.4762H34C35.1046 23.4762 36 24.4143 36 25.5714V31.8571C36 32.4357 35.5523 32.9048 35 32.9048H31V25.5714C31.0007 24.8355 30.8152 24.1126 30.4625 23.4762ZM17.5381 23.4762H14C12.8954 23.4762 12 24.4143 12 25.5714V31.8571C12 32.4357 12.4477 32.9048 13 32.9048H17V25.5714C16.9995 24.8355 17.1852 24.1125 17.5381 23.4762ZM26 21.381H27C28.6569 21.381 30 22.7881 30 24.5238V33.9524C30 34.531 29.5523 35 29 35H19C18.4477 35 18 34.531 18 33.9524V24.5238C18 22.7881 19.3431 21.381 21 21.381H22L24 27.6667L26 21.381Z" fill="#EF6039"/>
+                    </svg>
+                    <a class="team">TEAM</a>  
+                  </div>
+                    <div class="dream" >       
+                      <p>Meet Our Experts</p>
+                    </div>
+                  </div>     
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="team_image_1">
+                <div class="expert expert--1">
+                  <img class="expert__image" src="images\png\first-layout\Mask_3.jpg" alt="">
+                  <div class="team_hobby">Architect</div>
+                    <div class="team_name">Joslin Rodgers</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="team_image_2">
+                <div class="expert expert--2">
+                  <img class="expert__image" src="images\png\first-layout\Mask_4.jpg" alt="">
+                  <div class="team_hobby">3D Designer</div>
+                  <div class="team_name">Lizzie Rose</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="team_image_3">
+                <div class="expert expert--3">
+                  <img class="expert__image" src="images\png\first-layout\Mask_5.jpg" alt="">
+                  <div class="team_hobby">Manager</div>
+                  <div class="team_name"> Pablo Cambeiro</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team__button-wrapper">
+            <button class="button btn_3"><span>View All</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="news section section--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="icon-1">
+                <div class="icon">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#EF6039" stroke-opacity="0.300385"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.1032 34.9372C29.6976 34.3877 29.4569 33.7051 29.4569 32.9662V14.657C29.4569 14.2942 29.1683 14 28.8123 14H13.6445C13.2886 14 13 14.2942 13 14.657V31.6521C13 33.4635 14.4457 34.9372 16.2226 34.9372H30.1032ZM16.4375 26.6149H18.4999C18.8559 26.6149 19.1445 26.9091 19.1445 27.2719C19.1445 27.6348 18.8559 27.929 18.4999 27.929H16.4375C16.0815 27.929 15.7929 27.6348 15.7929 27.2719C15.7929 26.9091 16.0815 26.6149 16.4375 26.6149ZM16.4375 23.8116C16.0815 23.8116 15.7929 24.1058 15.7929 24.4686C15.7929 24.8315 16.0815 25.1256 16.4375 25.1256H18.4999C18.8559 25.1256 19.1445 24.8315 19.1445 24.4686C19.1445 24.1058 18.8559 23.8116 18.4999 23.8116H16.4375ZM26.0624 31.7835H16.4375C16.0815 31.7835 15.7929 31.4893 15.7929 31.1265C15.7929 30.7636 16.0815 30.4695 16.4375 30.4695H26.0624C26.4183 30.4695 26.7069 30.7636 26.7069 31.1265C26.7069 31.4893 26.4183 31.7835 26.0624 31.7835ZM26.0624 28.9802C26.4183 28.9802 26.7069 28.686 26.7069 28.3232V23.4174C26.7069 23.0545 26.4183 22.7604 26.0624 22.7604H21.2499C20.894 22.7604 20.6054 23.0545 20.6054 23.4174V28.3232C20.6054 28.686 20.894 28.9802 21.2499 28.9802H26.0624ZM26.0624 21.2711H16.4375C16.0815 21.2711 15.7929 20.9769 15.7929 20.6141C15.7929 20.2512 16.0815 19.957 16.4375 19.957H26.0624C26.4183 19.957 26.7069 20.2512 26.7069 20.6141C26.7069 20.9769 26.4183 21.2711 26.0624 21.2711ZM16.4375 18.4678H26.0624C26.4183 18.4678 26.7069 18.1736 26.7069 17.8108C26.7069 17.4479 26.4183 17.1537 26.0624 17.1537H16.4375C16.0815 17.1537 15.7929 17.4479 15.7929 17.8108C15.7929 18.1736 16.0815 18.4678 16.4375 18.4678ZM21.8944 24.0744H25.4179V27.6661H21.8944V24.0744ZM30.7459 18.5554H34.3553C34.7112 18.5554 34.9998 18.8496 34.9998 19.2124C34.9998 32.6184 35.0009 32.9188 34.9981 32.9188C34.9979 32.9188 34.9978 32.9182 34.9976 32.9182C34.9424 34.3381 33.5799 35.318 32.2511 34.9046C31.4204 34.6463 30.8054 33.8839 30.7498 32.9666C30.7494 32.9666 30.7491 32.9683 30.7488 32.9683C30.744 32.9682 30.7459 32.546 30.7459 18.5554Z" fill="#EF6039"/>
+                  </svg>
+                  <div class="text_icons">
+                    <p>NEWS</p>
+                  </div>
+                </div> 
+                <div class="expert__title_1">
+                  <p>Check Our Insides Stories</p>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="expert expert--3"> 
+                <img class="expert__image" src="images\png\first-layout\Mask_6.jpg" alt="">
+                <div class="expert__title"><a>18 aug 2020</a></div>
+                <div class="expert__name">
+                  <p>Foundation upon which the rest</p>
+                  <p>of the project</p>
+                  <button class="button btn_4"><span>Read More</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="expert expert--3"> 
+                <img class="expert__image" src="images\png\first-layout\Mask_7.jpg" alt="">
+                <div class="expert__title"><a>17 aug 2020</a></div>
+                <div class="expert__name">
+                  <p>Basic Services include the</p>
+                  <p> following</p>
+                  <p>phases</p>
+                  <button class="button btn_4"><span>Read More</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="expert expert--3">  
+                <img class="expert__image" src="images\png\first-layout\Mask8.jpg" alt="">
+                <div class="expert__title"><p>16 aug 2020</p></div>
+                <div class="expert__name">
+                  <p> As this can be very costly down</p>
+                  <p>the line</p>
+                  <button class="button btn_4"><span>Read More</span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cta">
+        <div class="cta__image">
+          <img src="images\png\first-layout\Mask_9.jpg" alt="">  
+        </div>
+        <div class="cta__content">
+          <h2>Want To Work With An Architect?</h2>
+          <button class="button--1">About Us</button>
+        </div>
+      </div>
+      <div class="footer section section--dark">
+        <div class="container">
+          <div class="row row-last">
+            <div class="col-3">
+              <div class="name_site">
+                <a href="#">ARC</a>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-column">
+                <ul class="footer-title"><li>Menu</li></ul>
+                <ul class="footer-menu">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Portofolio</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-column">
+                <ul class="footer-title"><li>Service</li></ul>
+                <ul class="footer-menu">  
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Documents</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="footer-column">
+                <ul class="footer-title"><li>Social</li></ul>
+                <ul class="footer-menu">
+                  <li>
+                    <a href="#">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" fill="#EF6039"/>
+                        <path d="M21.6667 21.3333H19V24H21.6667V32H25.6667V24H28.0933L28.3333 21.3333H25.6667V20.2227C25.6667 19.5853 25.7947 19.3333 26.4107 19.3333H28.3333V16H25.128C22.7307 16 21.6667 17.056 21.6667 19.0773V21.3333Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" fill="#EF6039"/>
+                        <path d="M32 19.54C31.412 19.8013 30.7787 19.9773 30.1147 20.0573C30.7933 19.6507 31.312 19.008 31.5587 18.2413C30.924 18.6173 30.2213 18.8907 29.4733 19.0373C28.876 18.3987 28.0213 18 27.0787 18C24.9587 18 23.4013 19.9773 23.88 22.0307C21.1533 21.8933 18.7333 20.5867 17.1147 18.6013C16.2547 20.076 16.6693 22.0067 18.1307 22.984C17.5933 22.9667 17.088 22.8187 16.6453 22.5733C16.6093 24.0933 17.7 25.516 19.2787 25.8333C18.8173 25.9587 18.3107 25.988 17.796 25.8893C18.2133 27.1933 19.428 28.1413 20.8627 28.168C19.48 29.2507 17.7427 29.7347 16 29.5293C17.4533 30.4613 19.1773 31.004 21.0307 31.004C27.1267 31.004 30.5693 25.856 30.3613 21.2387C31.004 20.7773 31.56 20.1987 32 19.54Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" fill="#EF6039"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 16C21.8267 16 21.556 16.0093 20.7013 16.0493C17.7947 16.1827 16.1813 17.7947 16.048 20.7013C16.0093 21.556 16 21.828 16 24C16 26.1733 16.0093 26.4453 16.048 27.2987C16.1813 30.204 17.7947 31.8187 20.7013 31.952C21.556 31.9907 21.8267 32 24 32C26.1733 32 26.4453 31.9907 27.3 31.952C30.2013 31.8187 31.8213 30.2067 31.952 27.2987C31.9907 26.4453 32 26.1733 32 24C32 21.828 31.9907 21.556 31.952 20.7013C31.8213 17.7987 30.2067 16.1813 27.3 16.0493C26.4453 16.0093 26.1733 16 24 16ZM24 17.4427C26.136 17.4427 26.3893 17.4507 27.2333 17.4893C29.4027 17.588 30.4133 18.616 30.5133 20.768C30.5507 21.612 30.5587 21.864 30.5587 24C30.5587 26.136 30.5507 26.3893 30.5133 27.232C30.4133 29.3827 29.404 30.4133 27.2333 30.512C26.3893 30.5493 26.1373 30.5587 24 30.5587C21.864 30.5587 21.6107 30.5507 20.768 30.512C18.5947 30.412 17.588 29.38 17.488 27.232C17.4507 26.3893 17.4413 26.136 17.4413 24C17.4413 21.864 17.4507 21.6107 17.488 20.768C17.5867 18.6147 18.5973 17.5867 20.768 17.488C21.6107 17.4493 21.864 17.4427 24 17.4427ZM19.892 24C19.892 21.7307 21.732 19.892 24 19.892C26.268 19.892 28.108 21.732 28.108 24C28.108 26.2693 26.268 28.108 24 28.108C21.732 28.108 19.892 26.2693 19.892 24ZM24 26.6667C22.5267 26.6667 21.3333 25.4733 21.3333 24C21.3333 22.528 22.5267 21.3333 24 21.3333C25.472 21.3333 26.668 22.5267 26.668 24C26.668 25.4733 25.472 26.6667 24 26.6667ZM27.3093 19.7307C27.3093 19.2 27.74 18.7707 28.2693 18.7707C28.8013 18.7707 29.2307 19.2 29.2307 19.7307C29.2307 20.2613 28.8 20.6907 28.2693 20.6907C27.7387 20.6907 27.3093 20.26 27.3093 19.7307Z" fill="white"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Acest Capitol este despre secondLayout -->
+    <div id="secondLayout" class="tabcontent">
+      <div class="header-second">
+        <div class="header_top">
+          <a href="#"><img class="icon_logo" src="images/svg/second-layout/icon.svg" alt="Richard"></a>
+          <div class="panel-second">
+          <a class="panel_text" href="#">About</a>
+          <a class="panel_text" href="#">Features</a>
+          <a class="panel_text" href="#">How to use</a>
+          <a class="panel_text" href="#">Download</a>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <div class="header_bottom_left">
+          <h2 class="title">Momentum</h2>
+          <p class="title_text">Launch your product — and savor the momentum.</p>
+          <a href="#"><button type="button" class="btn">Get the App</button></a>
+          </div>
+          <a href="#"><img class="phone" src="images\png\second-layout\phone.png" alt="Phone"></a>
+        </div>
+      </div>
+      <div class="top_body">
+        <p class="body_name">AENEAN CONSECTETUR PORTA</p>
+        <p class="body_text">Nullam quis risus eget urna mollis<br> ornare vel eu leo.</p>
+        <a href="#"><img class="tablet" src="images\png\second-layout\tablet.png" alt="Tablet"></a>
+      </div>
+      <div class="middle_body">
+        <div class="middle_body_left">
+          <p class="middle_body_name">AENEAN CONSECTETUR </p>
+          <p class="middle_body_text">Cay sociis nato<br> que penatibus et</p>
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in<br> eros elementum tristique.</p>
+        </div>
+        <div class="middle_body_right">
+          <a href="#"><img class="phone_2" src="images\png\second-layout\phone_2.png" alt="Phone"></a>
+        </div>
+      </div>
+      <div class="middle_body">
+        <div class="middle_body_left">
+          <a href="#"><img class="phone_2" src="images\png\second-layout\phone_3.png" alt="Phone"></a>
+        </div>
+        <div class="middle_body_right">
+          <p class="middle_body_name">CONSECTUlTRICIES</p>
+          <p class="middle_body_text">Amet Ipsum</p>
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in<br> eros elementum tristique.</p>
+        </div>
+      </div>
+      <div class="middle_body">
+        <div class="middle_body_left">
+          <p class="middle_body_name">AENEAN CONSECTETUR PORTA</p>
+          <p class="middle_body_text">Magna Porta Sit<br>Bibendum</p>
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Suspendisse varius enim in<br>eros elementum tristique.</p>
+        </div>
+        <div class="middle_body_right">
+          <a href="#"><img class="phone_2" src="images\png\second-layout\phone_4.png" alt="Phone"></a>
+        </div>
+      </div>
+      <div class="middle_body_down">
+        <div class="middle_body_left_1">
+          <a href="#"><img class="middle_body_icon" src="images\png\second-layout\burger.png" alt="Phone"></a>
+          <p class="middle_body_down_name">Activity Notifications</p>
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Suspendisse varius enim in eros elementum<br> tristique.</p>
+      </div>
+        <div class="middle_body_center">
+              <a href="#"><img class="middle_body_icon" src="images\png\second-layout\fork.png" alt="Phone"></a>
+          <p class="middle_body_down_name">Custom Timing </p> 
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Suspendisse varius enim in eros elementum<br> tristique.</p>
+        </div>
+        <div class="middle_body_right">
+              <a href="#"><img class="middle_body_icon" src="images\png\second-layout\statistic.png" alt="Phone"></a>
+          <p class="middle_body_down_name">Mobile Optimized</p> 
+          <p class="middle_body_content">Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Suspendisse varius enim in eros elementum<br> tristique.</p>
+        </div>
+      </div>
+      <div class="number">
+        <div>
+          <h2 class="number_h2">+12k</h2>
+          <p class="number_p">Nibh Elit Tristique</p>
+        </div>
+        <div>
+          <h2 class="number_h2">84</h2>
+          <p class="number_p">Aenean Condimentum</p>
+        </div>
+        <div>
+          <h2 class="number_h2">3,07</h2>
+          <p class="number_p">Quam Inceptos</p>
+        </div>
+        <div>
+          <h2 class="number_h2">24h</h2>
+          <p class="number_p">Ullamcorper</p>
+        </div>
+      </div>
+      <div class="middle_body">
+        <div class="middle_body_left">
+          <p class="middle_body_name">AENEAN CONSECTETUR PORTA </p>
+          <p class="middle_body_text">Sem Risus Elit<br>Vestibulum</p>
+          <p class="middle_body_content">Nulla vitae elit libero, a pharetra augue. Duis<br> mollis, est non commodo luctus, nisi erat<br> porttitor ligula, eget lacinia odio sem nec elit.<br><a href="#">Cras mattis consectetur</a> purus sit amet<br> fermentum. Donec id elit non mi porta<br>gravida at eget metus. Etiam porta sem<br>malesuada magna mollis euismod.</p>
+        </div>
+        <div class="middle_body_right">
+              <a href="#"><img class="burgher" src="images\png\second-layout\burgher.png" alt="Burgher"></a>
+        </div>
+      </div>
+      <div class="middle_body">
+        <div class="middle_body_left">
+              <a href="#"><img class="burgher" src="images\png\second-layout\vegan.png" alt="Burgher"></a>
+        </div>
+        <div class="middle_body_right">
+          <p class="middle_body_name">AENEAN CONSECTETUR PORTA</p>
+          <p class="middle_body_text">Parturient Tortor</p>
+          <p class="middle_body_content">Nulla vitae elit libero, a pharetra augue. Duis<br>mollis, est non commodo luctus, nisi erat<br>porttitor ligula, eget lacinia odio sem nec elit.<br><a href>Cras mattis consectetur</a> purus sit amet<br>fermentum. Donec id elit non mi porta<br>gravida at eget metus. Etiam porta sem<br>malesuada magna mollis euismod.</p>
+        </div>
+      </div>
+      <div class="bottom_body">
+        <div><a href="#"><img src="images\png\second-layout\virgula.png"></a>
+        </div>
+        <div class="bottom_body_text"><p class="text-second">HeadNulla vitae elit libero, a pharetra augue. Duis mollis, est<br>non commodo luctus, nisi erat porttitor ligula, eget lacinia odio<br>sem nec elit. Pus sit amet fermentum. Donec id elit non mi porta<br>gravida at eget metus. Etiam porta sem malesuada magna<br>mollis euismod.ing</p>
+        </div>
+      <div class="page_next">
+        <a class="page_one" href="#">Joshua Home</a>   
+        <a href="#"><img src="images\png\second-layout\linie.png"></a>
+        <a class="page_two" href="#">New York Times</a>
+      </div>
+        <a href="#"><img class="page_next_img" src="images\svg\second-layout\Rectangle (1).svg"></a> 
+        <a href="#"><img class="page_next_img" src="images\svg\second-layout\Rectangle (2).svg"></a> 
+      <div>
+        <img src="images\png\second-layout\panel.png">
+      </div>
+        <img class="page_next_img_phone" src="images\png\second-layout\many_phone.png">
+      </div>
+      <div class="section-second">
+        <h2 class="section_title">Ready to get started?</h2>
+        <input class="button_left" type="button" value="Download Now" />  
+        <input class="button_right" type="button" value="Get in Touch" />  
+      </div> 
+      <div class="section_bottom">
+        <h2 class="section_bottom_title">Get updates from Richard</h2>
+        <p class="middle_body_content p">New course alerts, discounts and free lessons</p> 
+        <input class="input" type="email" name="login" placeholder="Enter Your Email">
+        <input class="button-input" type="button" value="Subscribe" />  
+        <div class="section_final">
+          <div class="icon-second">
+          <img src="images\png\second-layout\icon.png">
+          </div>
+            <a class="contact" href="#">Email</a>
+            <a class="contact" href="#">Instagram</a>
+            <a class="contact" href="#">Facebook</a>
+            <a class="contact" href="#">Twitter</a>
+            <a class="contact" href="#">Image License Info</a>
+            <a class="contact" href="#">Powered by Webflow</a>
+          </div>
+      </div>
+    </div>
+    <!-- Acest Capitol este despre thirdLayout -->
+    <div id="thirdLayout" class="tabcontent">
+      <header>
+        <div class="third-header">
+          <a href="#"><img src="images\svg\third-layout\logo.svg" alt="Logo" ></a>
+          <nav>
+            <ul class="nav">
+              <li class="nav_item">
+                <a href="#" class="nav_link nav_activ">Tarifs</a>
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link nav_activ">App iOS</a>
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_link nav_activ">Me connecter</a>
+              </li>
+              <li class="nav_item">
+                <a href="#" class="nav_btn">S'inscrire</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="banner-thirt">
+        <div class="container">
+          <h1 class="banner_title">Devis, factures, suivi, plafonds, cotisations</h1>
+          <p class="banner_text">Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !</p>
+          <div class="btn_group">
+            <a href="#" class="btn_group_btn btn_group_btn_main">Créer mon compte</a>
+            <a href="#" class="btn_group_btn">Voir la vidéo</a>
+          </div>
+          <div class="banner_img"></div>
+        </div>
+      </section>
+      <section class="section-thirt">
+        <div class="container">
+          <h2 class="section_title">Des tarifs qui s'adaptent à votre activité !</h2>
+          <div class="tarif">
+            <div class="tarif_item tarif_item_01">
+              <div class="tarif_header">
+                <div class="tarif_info">
+                  <img src="images\svg\third-layout\pakko_f.svg" class="tarif_logo" />
+                  <h3 class="tarif_info_title">Gratuit</h3>
+                  <p class="tarif_info_price"><span>0</span></p>
+                </div>
+              </div>
+              <div class="tarif_footer">
+                <ul class="tarif_list">
+                  <li class="tarif_list_item">Gratuit</li>
+                  <li class="tarif_list_item"> Jusqu'à 4 clients</li>
+                  <li class="tarif_list_item">Chiffre d'affaires jusqu'à 5 000€</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tarif_item tarif_item_02">
+              <div class="tarif_header">
+                <div class="tarif_info">
+                  <img src="images\svg\third-layout\pakko_f.svg" class="tarif_logo" />
+                  <h3 class="tarif_info_title">Basique</h3>
+                  <p class="tarif_info_price">5&euro; <span>/mois</span></p>
+                </div>
+              </div>
+              <div class="tarif_footer">
+                <ul class="tarif_list">
+                  <li class="tarif_list_item">30 jours d'essai gratuits</li>
+                  <li class="tarif_list_item">Clients illimités</li>
+                  <li class="tarif_list_item">Chiffre d'affaires jusqu'à 30 000€</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tarif_item tarif_item_03">
+              <div class="tarif_header">
+                <div class="tarif_info">
+                  <img src="images\svg\third-layout\pakko_f.svg" class="tarif_logo" />
+                  <h3 class="tarif_info_title">Pro</h3>
+                  <p class="tarif_info_price">12&euro; <span>/mois</span></p>
+                </div>
+              </div>
+              <div class="tarif_footer">
+                <ul class="tarif_list">
+                  <li class="tarif_list_item">30 jours d'essai gratuits</li>
+                  <li class="tarif_list_item">Clients illimités</li>
+                  <li class="tarif_list_item">Chiffre d'affaires illimité</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+            <div class="mentions">
+                <h2 class="mentions_title">Ils en parlent<br> mieux que nous</h2>
+                <article>
+                  <div class="mentions_box mentions_box_01">
+                    <div class="mentions_box_header">
+                      <img src="images\png\third-layout\mention-avatar-01.png" alt="Avatar" class="mentions_box_avatar">
+                      <div class="mentions_box_wrapper">
+                        <p class="mentions_box_user">Antony Legrand</p>
+                        <address class="mentions_box_address">@Wisibility</address>
+                      </div>
+                      <img src="images\svg\third-layout\mention-social-1.svg" alt="Twitter" class="mentions_box_social" />
+                    </div>
+                    <p class="mentions_box_text">Merci pour toutes vos réponses concernant un bon service de facturation / suivi de CA pour les Free… Je crois qu'avec @Pakko_app j'ai trouvé ce que je cherche. Simple et efficace.</p>
+                    <p class="mentions_box_view"><a href="#">Voir le post</a></p>
+                  </div>
+                </article>
+                <article>
+                  <div class="mentions_box mentions_box_02">
+                    <div class="mentions_box_header">
+                      <img src="images\png\third-layout\mention-avatar-02.png" alt="Avatar" class="mentions_box_avatar">
+                      <div class="mentions_box_wrapper">
+                        <p class="mentions_box_user">Retour utilisateur</p>
+                        <address class="mentions_box_address">Formulaire de feedback</address>
+                      </div> 
+                      <img src="images\svg\third-layout\mention-social-0.svg" alt="Comment" class="mentions_box_social">
+                    </div>
+                    <p class="mentions_box_text">Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.</p>
+                    <p class="mentions_box_hide"><a href="#"></a></p>
+                  </div>
+                </article>
+                <article>
+                  <div class="mentions_box mentions_box_03">
+                    <div class="mentions_box_header">
+                      <img src="images\png\third-layout\mention-avatar-03.png" alt="Avatar" class="mentions_box_avatar">
+                      <div class="mentions_box_wrapper">
+                        <p class="mentions_box_user">Retour utilisateur</p>
+                        <address class="mentions_box_address">Formulaire de feedback</address>
+                      </div>
+                      <img src="images\svg\third-layout\mention-social-0.svg" alt="Comment" class="mentions_box_social" >
+                    </div>
+                    <p class="mentions_box_text">C’est exactement ce que je cherchais.</p>
+                    <p class="mentions_box_hide"><a href="#"></a></p>
+                  </div>
+                </article>
+                <article>
+                  <div class="mentions_box mentions_box_04">
+                    <div class="mentions_box_header">
+                      <img src="images\png\third-layout\mention-avatar-04.png" alt="Avatar" class="mentions_box_avatar">
+                      <div class="mentions_box_wrapper">
+                        <p class="mentions_box_user">Matthieu Teyssandier</p>
+                        <address class="mentions_box_address">@m_teyssandier</address>
+                      </div>
+                      <img src="images\svg\third-layout\mention-social-1.svg" alt="Comment" class="mentions_box_social" >
+                    </div>
+                      <p class="mentions_box_text">@Pakko_app Best service de CA !</p>
+                      <p class="mentions_box_view"><a href="#">Voir le post</a></p>
+                  </div>
+                </article>
+                <article>
+                  <div class="mentions_box mentions_box_05">
+                    <div class="mentions_box_header">
+                      <img src="images\png\third-layout\mention-avatar-05.png" alt="Avatar" class="mentions_box_avatar">
+                      <div class="mentions_box_wrapper">
+                        <p class="mentions_box_user">Retour utilisateur</p>
+                        <address class="mentions_box_address">Formulaire de feedback</address>
+                      </div>
+                      <img src="images\svg\third-layout\mention-social-0.svg" alt="Comment" class="mentions_box_social" >
+                    </div>
+                    <p class="mentions_box_text">Le service a l’air super ça faisait longtemps que je cherchais un dashboard aussi clean que le votre ! Ça donne envie de l'utiliser !</p>
+                    <p class="mentions_box_hide"><a href="#"></a></p>
+                  </div>
+                </article>
+            </div>
+        </div>
+      </section>
+    <footer>
+        <div class="footer-third">
+        <div class="footer_item footer_item_main">
+            <a href="#"><img src="images\svg\third-layout\logo.svg" alt="Logo" class="footer_logo"></a>
+           <p class="footer_slogan">Gagnez du temps,<br>faites ce que vous aimez !</p>
+           <div class="footer_social">
+               <a href="#"><img src="images\svg\third-layout\icon_facebook.svg" alt="Facebook" title="Facebook" ></a>
+               <a href="#"><img src="images\svg\third-layout\icon_instagram.svg" alt="Instagram" title="Instagram"></a>
+               <a herf="#"><img src="images\svg\third-layout\icon_linkedin.svg" alt="LinkedIn" title="LinkedIn"></a>
+           </div>
+        </div>
+        <div class="footer_item">
+            <h2 class="footer_list_header">Fonctionnalités</h2>
+            <ul class="footer_list">
+                <li class="footer_list_item"><a href="#">Suivi et analyse de l'activité</a></li>
+                <li class="footer_list_item"><a href="#">Devis & facturation</a></li>
+                <li class="footer_list_item"><a href="#">Gestion des projets et clients</a></li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <h2 class="footer_list_header">À propos</h2>
+            <ul class="footer_list">
+                <li class="footer_list_item"><a href="#">Tarifs</a></li>
+                <li class="footer_list_item"><a href="#">Centre d'aide</a></li>
+                <li class="footer_list_item"><a href="#">CGV</a></li>
+                <li class="footer_list_item"><a href="#">Politique de confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="footer_item">
+            <h2 class="footer_list_header">Ressources</h2>
+            <ul class="footer_list">
+                <li class="footer_list_item"><a href="#">Deals</a></li>
+                <li class="footer_list_item"><a href="#">Outils</a></li>
+                <li class="footer_list_item"><a href="#">Blog</a></li>
+                <li class="footer_list_item"><a href="#">Simulateur TJM</a></li>
+            </ul>
+        </div>
+    </div>
+    </footer> 
+    </div>
+    <!-- Acest Capitol este despre Sites -->
+    <!-- Acest Capitol este despre firstSites -->
+    <div id="firstSite" class="tabcontent">
+      <div class="first-sites">
+        <div class="first-sites_headerPanel">
+          <img src="images\svg\first-sites\insta.svg" alt="Instagram">
+          <button class="first-tablinks" onclick="openFirstSites(event, 'Home')" id="defaultOpenSite">Главная</button>
+          <button class="first-tablinks" onclick="openFirstSites(event, 'Master')">Мастера</button>
+          <img src="images\svg\first-sites\omega-sign-svgrepo-com 1.svg" alt="vector">
+          <button class="first-tablinks" onclick="openFirstSites(event, 'Price')">Цены</button>
+          <button class="first-tablinks" onclick="openFirstSites(event, 'Contact')">Контакты</button>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <p class="sidenav-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ipsum, adipiscing amet in egestas sem dui, arcu faucibus scelerisque. Nisl est felis id volutpat. Sed dolor fermentum amet lectus nibh quis. Tortor donec pellentesque leo ac placerat. Morbi.</p>
+          <h3 class="sidenav-name">Контакты</h3>
+          <h2 class="sidenav-number">+7 (812) 123-45-67</h2>
+          <h2 class="sidenav-number">+7 (911) 123-45-67</h2>
+          <h2 class="sidenav-number">Новоостровский проспект, дом 36 лит. С</h2>
+          <h3 class="sidenav-name">Режим работы</h3>
+          <h2 class="sidenav-number">C 10:00 до 21:00 (Пн-Пт)</h2>
+          <h2 class="sidenav-number">С 11:00 до 20:00 (Сб-Вс)</h2>
+        </div>
+        <span style="font-size:30px;cursor:pointer;color: white;" onclick="openNav()">&#9776;</span>
+        </div>
+      </div>
+      <!-- Acest capitol este depre pagina pricipala -->
+      <div id="Home" class="first-tabcontent"> 
+        <div class="home">
+          <div class="header-home">
+            <h2 class="header-home_text">Салон красоты<br>«Delote-Beauty»<br>на Крестовском</h2>
+            <a href="#our-work"><img class="header-home_img" src="images\svg\first-sites\mouse.svg" alt="mouse"></a>
+            <a class="header-home_a" href="#our-work">Прокрутите вниз</a>
+          </div>
+          <p class="text_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In arcu nibh vitae amet.<br>
+                        Ipsum, pharetra donec ornare velit. Id at quisque accumsan risus ac ipsum ut. Sit<br>
+                        elit, facilisi proin non malesuada sociis tristique. Viverra augue lorem ut quisque<br>
+                        quam tortor, malesuada iaculis.<br>
+                        <br>Et elementum at nulla venenatis, faucibus integer. Auctor neque eros, viverra<br>
+                        rutrum. Fames ultrices condimentum tortor nec penatibus. Velit imperdiet<br>
+                        sapien fringilla vestibulum sit fames.</p>
+          <div class="service">
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_TnyHlxVnyhk.png" alt=""><br><br>
+              <a href="#" class="service_text">Парикмахерские услуги</a>
+            </div>
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_gb6gtiTZKB8.png" alt=""><br><br>
+              <a href="#" class="service_text">Маникюр</a>
+            </div>
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_qeuJczNo54w.png" alt=""><br><br>
+              <a href="#" class="service_text">Педикюр</a>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_Pe9IXUuC6QU.png" alt=""><br><br>
+              <a href="#" class="service_text">Косметология</a>
+            </div>
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_VxAwTeiqDao.png" alt=""><br><br>
+              <a href="#" class="service_text">Эстетист по телу</a>
+            </div>
+            <div class="service_border">
+              <img class="service_foto" src="images\png\first-sites\unsplash_FoeIOgztCXo.png" alt=""><br><br>
+              <a href="#" class="service_text">Визаж</a>
+            </div>
+          </div>
+          <div class="icon_panel">
+            <img src="images\svg\first-sites\logo-1.svg" alt="">
+            <img src="images\svg\first-sites\logo-1.svg" alt="">
+            <img src="images\svg\first-sites\logo-2.svg" alt="">
+            <img src="images\svg\first-sites\logo-3.svg" alt="">
+          </div>
+          <div class="our_work">
+            <p id="our-work" class="our_work_text">Наши работы</p>
+            <div class="our_work_panel">
+              <a class="our_work_panel_name" href="#">Показать все</a>
+              <a class="our_work_panel_name" href="#">Парикмахерские услуги</a>
+              <a class="our_work_panel_name" href="#">Маникюр</a>
+              <a class="our_work_panel_name" href="#">Педикюр</a>
+            </div>
+          <div class="our_work_img">
+            <img class="our_work_img_align" src="images\png\first-sites\work-9.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-6.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-3.png" alt=""><br>
+            <img class="our_work_img_align" src="images\png\first-sites\work-8.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-5.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-2.png" alt=""><br>
+            <img class="our_work_img_align" src="images\png\first-sites\work-7.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-4.png" alt="">
+            <img class="our_work_img_align" src="images\png\first-sites\work-1.png" alt="">
+          </div>
+        </div>
+        <hr class="line_body">
+        <div class="bottom_body_second">
+          <div>
+          <img class="vector" src="images\svg\first-sites\Vector.svg" alt="">
+          </div>
+          <div>
+            <p class="header_contact">Контакты</p>
+            <p class="header_contact_number">+7 (812) 123-45-67</p>
+            <p class="header_contact_number">+7 (911) 123-45-67</p>
+            <p class="header_contact_number">Новоостровский проспект, дом 36 лит. С</p>
+          </div>
+          <div>
+            <p class="header_contact">Режим работы</p>
+            <p class="header_contact_number">C 10:00 до 21:00 (Пн-Пт)<br>
+            <p class="header_contact_number">С 11:00 до 20:00 (Сб-Вс)   
+          </div>    
+          <div>
+            <p class="header_contact">Мы в Instagram</p>
+            <img class="header_contact" src="images\svg\first-sites\Group 2.svg" alt="">
+          </div>
+        </div>
+        <hr class="line_body">
+        <p class="copyright">Copyright © 2017 - 2022</p>
+        </div>
+      </div>
+      <!-- Acest capitol este despre pagina masters -->
+      <div id="Master" class="first-tabcontent">
+        <div class="master">
+          <hr class="line">
+          <h1 class="title">Наши мастера</h1>
+          <div class="masters">
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_IF9TK5Uy-KI (1).png" alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_RBerxXPnZPE.png" alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_IF9TK5Uy-KI (1).png " alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+          </div>
+          <div class="masters">
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_sLGYaQ_stMM.png" alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_52fj00DaOPA.png" alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+            <div class="masters_border">
+              <img class="masters_foto" src="images\svg\first-sites\unsplash_TSZo17r3m0s.png" alt=""><br><br>
+              <a href="#" class="masters_text">Елена Васильевна</a>
+              <p class="masters_p">Визажист</p>
+            </div>
+          </div>
+          <hr class="line_body">
+        <div class="bottom_body_second">
+          <div>
+          <img class="vector" src="images\svg\first-sites\Vector.svg" alt="">
+          </div>
+          <div>
+            <p class="header_contact">Контакты</p>
+            <p class="header_contact_number">+7 (812) 123-45-67</p>
+            <p class="header_contact_number">+7 (911) 123-45-67</p>
+            <p class="header_contact_number">Новоостровский проспект, дом 36 лит. С</p>
+          </div>
+          <div>
+            <p class="header_contact">Режим работы</p>
+            <p class="header_contact_number">C 10:00 до 21:00 (Пн-Пт)<br>
+            <p class="header_contact_number">С 11:00 до 20:00 (Сб-Вс)   
+          </div>    
+          <div>
+            <p class="header_contact">Мы в Instagram</p>
+            <img class="header_contact" src="images\svg\first-sites\Group 2.svg" alt="">
+          </div>
+        </div>
+        <hr class="line_body">
+        <p class="copyright">Copyright © 2017 - 2022</p>
+      </div>
+    </div>
+      <!-- Acest capitol este despre pagina price -->
+    <div id="Price" class="first-tabcontent">
+      <div class="price">
+      <hr class="line">
+        <h1 class="title">Цены на услуги</h1>
+        <div class="price-display">
+          <div class="price-first">
+            <div class="price-left">
+              <img src="images\png\first-sites\image (1).png" alt="">
+            </div>
+            <div class="price-right">
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr>
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+            </div>
+          </div>
+          <div class="price-second">
+            <div class="price-right">
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr>
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+            </div>
+            <div class="price-left">
+              <img src="images\png\first-sites\image (1).png" alt="">
+            </div>
+          </div>
+          <div class="price-first">
+            <div class="price-left">
+              <img src="images\png\first-sites\image (1).png" alt="">
+            </div>
+            <div class="price-right">
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr>
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+              <h4>Женская укладка<b>1 000 ₽</b></h4>
+              <h5>+ обработк кончинков волос</h5>
+              <hr> 
+            </div>
+          </div>
+        </div>
+        <div class="price-right"></div>
+        <hr class="line_body">
+        <div class="bottom_body_second">
+          <div>
+          <img class="vector" src="images\svg\first-sites\Vector.svg" alt="">
+          </div>
+          <div>
+            <p class="header_contact">Контакты</p>
+            <p class="header_contact_number">+7 (812) 123-45-67</p>
+            <p class="header_contact_number">+7 (911) 123-45-67</p>
+            <p class="header_contact_number">Новоостровский проспект, дом 36 лит. С</p>
+          </div>
+          <div>
+            <p class="header_contact">Режим работы</p>
+            <p class="header_contact_number">C 10:00 до 21:00 (Пн-Пт)<br>
+            <p class="header_contact_number">С 11:00 до 20:00 (Сб-Вс)   
+          </div>    
+          <div>
+            <p class="header_contact">Мы в Instagram</p>
+            <img class="header_contact" src="images\svg\first-sites\Group 2.svg" alt="">
+          </div>
+        </div>
+        <hr class="line_body">
+        <p class="copyright">Copyright © 2017 - 2022</p>
+      </div>
+    </div>
+      <!-- Acest capitol este despre pagina contact -->
+    <div id="Contact" class="first-tabcontent">
+      <div class="contact_deloty">
+      <h1 class="title title-contact">Контакты</h1>
+      <div class="png_map">
+        <img class="png_map" src="images\svg\first-sites\карта.png" alt="">
+        <div class="table-top">
+          <ul>
+            <li class="table_title" >Контакты</li>
+            <li class="table" >+7(812)123-45-67</li>
+            <li class="table" >+7(911)123-45-67</li>
+            <li class="table" >Новоостровский проспект, дом 36 лит. С</li>
+          </ul>
+          <ul>
+            <li class="table_title">Режим работы</li>
+            <li class="table">С 10:00 до 21:00(Пн-Пт)</li>
+            <li class="table">С 11:00 до 20:00(Сб-Вс)</li>
+          </ul>
+          <ul>
+            <li class="table_title" >Контакты</li>
+            <li class="table" >+7(812)123-45-67</li>
+            <li class="table" >+7(911)123-45-67</li>
+            <li class="table" >Новоостровский проспект, дом 36 лит. С</li>
+          </ul>
+          <ul>
+            <li class="table_title">Режим работы</li>
+            <li class="table">С 10:00 до 21:00(Пн-Пт)</li>
+            <li class="table">С 11:00 до 20:00(Сб-Вс)</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="line">
+      <div class="table-top">
+        <ul>
+          <li class="table"><img src="images\svg\first-sites\Vector.svg" alt=""></li>
+        </ul>
+        <ul>
+          <li class="table_title" >Контакты</li>
+          <li class="table">+7(812)123-45-67</li>
+          <li class="table">+7(911)123-45-67</li>
+          <li class="table">Новоостровский проспект, дом 36 лит. С</li>
+        </ul>
+        <ul>
+          <li class="table_title">Режим работы</li>
+          <li class="table">С 10:00 до 21:00(Пн-Пт)</li>
+          <li class="table">С 11:00 до 20:00(Сб-Вс)</li>
+        </ul>
+        <ul>
+          <li class="table_title">Мы в Instagram</li>
+          <li class="table"><img src="images\svg\first-sites\insta.svg" alt=""></li>
+        </ul>
+      </div>
+      <hr class="line">
+      <p>Copyright © 2017 - 2022</p>
+      </div>
+    </div>
+    </div>
+    <!-- Acest Capitol este despre secondSites -->
+    <div id="secondSite" class="tabcontent"></div>
+    <!-- Acest Capitol este despre thirdSites -->
+    <div id="thirdSite" class="tabcontent"></div>
+    <!-- Acest Capitol este despre Application -->
+    <!-- Acest Capitol este despre firstApplication -->
+    <div id="firstApplication" class="tabcontent">
+      <div class="box-title">
+        <h3>Introduction</h3>
+        <p>This chapter about CatClock</p>
+      </div>
+      <div class="page">
+        <header class="header-cat">
+          <h1>LOLCAT CLOCK</h1>
+        </header>
+        <h4>
+          I CAN HAZ TIME?? <br>
+          <span id="clock">Clock goes here</span>
+        </h4>
+        <img id="lolcatImage" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+        <blockquote id="timeEvent">This is where time events are reported</blockquote>
+        set Wake Up Time
+        <select id="wakeUpTimeSelector">
+          <option value="1">1 AM - 2AM</option>
+          <option value="2">2 AM - 3AM</option>
+          <option value="3">3 AM - 4AM</option>
+          <option value="4">4 AM - 5AM</option>
+          <option value="5">5 AM - 6AM</option>
+          <option value="6">6 AM - 7AM</option>
+          <option value="7">7 AM - 8AM</option>
+          <option value="8" selected>8 AM - 9AM</option>
+          <option value="9">9 AM - 10AM</option>
+          <option value="10">10 AM - 11AM</option>
+          <option value="11">11 AM - 12PM</option>
+          <option value="12">12 PM - 1PM</option>
+          <option value="13">1 PM - 2PM</option>
+          <option value="14">2 PM - 3PM</option>
+          <option value="15">3 PM - 4PM</option>
+          <option value="16">4 PM - 5PM</option>
+          <option value="17">5 PM - 6PM</option>
+          <option value="18">6 PM - 7PM</option>
+          <option value="19">7 PM - 8PM</option>
+          <option value="20">8 PM - 9PM</option>
+          <option value="21">9 PM - 10PM</option>
+          <option value="22">10 PM - 11PM</option>
+          <option value="23">11 PM - 12AM</option>
+          <option value="24">12 AM - 1AM</option>
+        </select>
+        <br>
+        set Lunch Time
+          <select id="lunchTimeSelector">
+            <option value="1">1 AM - 2AM</option>
+            <option value="2">2 AM - 3AM</option>
+            <option value="3">3 AM - 4AM</option>
+            <option value="4">4 AM - 5AM</option>
+            <option value="5">5 AM - 6AM</option>
+            <option value="6">6 AM - 7AM</option>
+            <option value="7">7 AM - 8AM</option>
+            <option value="8">8 AM - 9AM</option>
+            <option value="9">9 AM - 10AM</option>
+            <option value="10">10 AM - 11AM</option>
+            <option value="11">11 AM - 12PM</option>
+            <option value="12" selected>12 PM - 1PM</option>
+            <option value="13">1 PM - 2PM</option>
+            <option value="14">2 PM - 3PM</option>
+            <option value="15">3 PM - 4PM</option>
+            <option value="16">4 PM - 5PM</option>
+            <option value="17">5 PM - 6PM</option>
+            <option value="18">6 PM - 7PM</option>
+            <option value="19">7 PM - 8PM</option>
+            <option value="20">8 PM - 9PM</option>
+            <option value="21">9 PM - 10PM</option>
+            <option value="22">10 PM - 11PM</option>
+            <option value="23">11 PM - 12AM</option>
+            <option value="24">12 AM - 1AM</option>
+          </select>
+        <br>
+        set Nap Time
+        <select id="napTimeSelector">
+          <option value="1">1 AM - 2AM</option>
+          <option value="2">2 AM - 3AM</option>
+          <option value="3">3 AM - 4AM</option>
+          <option value="4">4 AM - 5AM</option>
+          <option value="5">5 AM - 6AM</option>
+          <option value="6">6 AM - 7AM</option>
+          <option value="7">7 AM - 8AM</option>
+          <option value="8">8 AM - 9AM</option>
+          <option value="9">9 AM - 10AM</option>
+          <option value="10">10 AM - 11AM</option>
+          <option value="11">11 AM - 12PM</option>
+          <option value="12">12 PM - 1PM</option>
+          <option value="13">1 PM - 2PM</option>
+          <option value="14">2 PM - 3PM</option>
+          <option value="15" selected>3 PM - 4PM</option>
+          <option value="16">4 PM - 5PM</option>
+          <option value="17">5 PM - 6PM</option>
+          <option value="18">6 PM - 7PM</option>
+          <option value="19">7 PM - 8PM</option>
+          <option value="20">8 PM - 9PM</option>
+          <option value="21">9 PM - 10PM</option>
+          <option value="22">10 PM - 11PM</option>
+          <option value="23">11 PM - 12AM</option>
+          <option value="24">12 AM - 1AM</option>
+          </select>
+        <br>
+        <button id="partyTimeButton">Party!</button>
+          <p>&copy; Skillcrush 2016</p>
+      </div>
+    </div>
+    <!-- Acest Capitol este despre secondApplication -->
+    <div id="secondApplication" class="tabcontent">
+      <div class="box-title">
+        <h3>Introduction</h3>
+        <p>This chapter is IphoneCalc</p>
+      </div>
+      <div class="calc">
+        <div class="calc-screen">
+          <p>0</p>
+        </div>
+        <div class="buttons">
+          <div class="btn-iphone ac bg-grey">ac</div>
+          <div class="btn-iphone plus-minus bg-grey">+/-</div>
+          <div class="btn-iphone percent bg-grey">%</div>
+          <div class="btn-iphone division bg-orange">/</div>
+          <div class="btn-iphone seven">7</div>
+          <div class="btn-iphone eight">8</div>
+          <div class="btn-iphone nine">9</div>
+          <div class="btn-iphone myltiply bg-orange">X</div>
+          <div class="btn-iphone four">4</div>
+          <div class="btn-iphone five">5</div>
+          <div class="btn-iphone six">6</div>
+          <div class="btn-iphone minus bg-orange">-</div>
+          <div class="btn-iphone one">1</div>
+          <div class="btn-iphone two">2</div>
+          <div class="btn-iphone three">3</div>
+          <div class="btn-iphone plus bg-orange">+</div>
+          <div class="btn-iphone zero">0</div>
+          <div class="btn-iphone dot">.</div>
+          <div class="btn-iphone equal bg-orange">=</div>
+        </div>
+      </div>
+    </div>
+    <!-- Acest Capitol este despre thirdApplication -->
+    <div id="thirdApplication" class="tabcontent">
+      <div class="box-title">
+        <h3>Introduction</h3>
+        <p>This chapter checkers</p>
+      </div>
+      <div class="indicator"><div>Игра не начата</div></div>
+      <table class="board">
+        <div class="message"><div>Ходить можно только вперёд по диагонали, бить можно как вперёд, так и назад, если шашка дошла до другого конца, то она превращается в дамку. Бой обязателен.
+        <tr p="1">
+          <td class="td1"  p="1"></td>
+          <td  class="td2" align="center" p="2"><div class="pawn2"></div></td>
+          <td class="td1"  p="3"></td>
+          <td  class="td2" align="center" p="4"><div class="pawn2"></div></td>
+          <td class="td1"  p="5"></td>
+          <td  class="td2" align="center" p="6"><div class="pawn2"></div></td>
+          <td class="td1"  p="7"></td>
+          <td  class="td2" align="center" p="8"><div class="pawn2"></div></td>
+        </tr>
+        <tr p="2">
+          <td  class="td2" align="center" p="1"><div class="pawn2"></div></td>
+          <td class="td1"  p="2"></td>
+          <td  class="td2" align="center" p="3"><div class="pawn2"></div></td>
+          <td class="td1"  p="4"></td>
+          <td  class="td2" align="center" p="5"><div class="pawn2"></div></td>
+          <td class="td1"  p="6"></td>
+          <td  class="td2" align="center" p="7"><div class="pawn2"></div></td>
+          <td class="td1"  p="8"></td>
+        </tr>
+        <tr p="3">
+          <td class="td1"  p="1"></td>
+          <td  class="td2" align="center" p="2"><div class="pawn2"></div></td>
+          <td class="td1"  p="3"></td>
+          <td  class="td2" align="center" p="4"><div class="pawn2"></div></td>
+          <td class="td1"  p="5"></td>
+          <td  class="td2" align="center" p="6"><div class="pawn2"></div></td>
+          <td class="td1"  p="7"></td>
+          <td  class="td2" align="center" p="8"><div class="pawn2"></div></td>
+        </tr>
+        <tr p="4">
+          <td  class="td2" align="center" p="1"></td>
+          <td class="td1"  p="2"></td>
+          <td  class="td2" align="center" p="3"></td>
+          <td class="td1"  p="4"></td>
+          <td  class="td2" align="center" p="5"></td>
+          <td class="td1"  p="6"></td>
+          <td  class="td2" align="center" p="7"></td>
+          <td class="td1"  p="8"></td>
+        </tr>
+        <tr p="5">
+          <td class="td1"  p="1"></td>
+          <td  class="td2" align="center" p="2"></td>
+          <td class="td1"  p="3"></td>
+          <td  class="td2" align="center" p="4"></td>
+          <td class="td1"  p="5"></td>
+          <td  class="td2" align="center" p="6"></td>
+          <td class="td1"  p="7"></td>
+          <td  class="td2" align="center" p="8"></td>
+        </tr>
+        <tr p="6">
+          <td  class="td2" align="center" p="1"><div class="pawn1"></div></td>
+          <td class="td1"  p="2"></td>
+          <td  class="td2" align="center" p="3"><div class="pawn1"></div></td>
+          <td class="td1"  p="4"></td>
+          <td  class="td2" align="center" p="5"><div class="pawn1"></div></td>
+          <td class="td1"  p="6"></td>
+          <td  class="td2" align="center" p="7"><div class="pawn1"></div></td>
+          <td class="td1"  p="8"></td>
+        </tr>
+        <tr p="7">
+          <td class="td1"  p="1"></td>
+          <td  class="td2" align="center" p="2"><div class="pawn1"></div></td>
+          <td class="td1"  p="3"></td>
+          <td  class="td2" align="center" p="4"><div class="pawn1"></div></td>
+          <td class="td1"  p="5"></td>
+          <td  class="td2" align="center" p="6"><div class="pawn1"></div></td>
+          <td class="td1"  p="7"></td>
+          <td  class="td2" align="center" p="8"><div class="pawn1"></div></td>
+        </tr>
+        <tr p="8">
+          <td  class="td2" align="center" p="1"><div class="pawn1"></div></td>
+          <td class="td1"  p="2"></td>
+          <td  class="td2" align="center" p="3"><div class="pawn1"></div></td>
+          <td class="td1"  p="4"></td>
+          <td  class="td2" align="center" p="5"><div class="pawn1"></div></td>
+          <td class="td1"  p="6"></td>
+          <td  class="td2" align="center" p="7"><div class="pawn1"></div></td>
+          <td class="td1"  p="8"></td>
+        </tr>
+      </table>
+      <div class="shadow"><input type="button" class="start" value="Начать"/></div>
+      <div class="timer hide"></div>
+      <div class="score hide">Белые 12:12 Красные</div>
+      <div class="win hide"><div></div></div>
+    </div>
+    <!-- Acest Capitol este despre hobby -->
+    <div id="Hobbies" class="tabcontent">
+      <div class="box-title">
+        <h3>Introduction</h3>
+        <p>This chapter is about my Hobbie</p>
+      </div>
+      <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4MPoXRLYmgs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/984QZHdR2r4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wVWA1QqUK8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S5qg3WnP6t4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WG_SbXsegaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_T6DnFdYfpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>

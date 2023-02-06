@@ -1,0 +1,408 @@
+/* Change background color of buttons on hover */
+.first-tab button:hover {
+  background-color: #ddd;
+}
+// 
+/* Create an active/current tablink class */
+.first-tab button.active {
+  background-color: #ccc;
+}
+// 
+/* Style the tab content */
+.first-tabcontent {
+  display: none;
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+// 
+.sidenav {
+  margin-top: 200px;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+// 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+// 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 36px;
+}
+// 
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+// 
+.first-sites_headerPanel {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-around;
+  text-align: center;
+}
+// 
+.home {
+  background-color: #111;
+}
+// 
+.header-home {
+  background-image: url(/images/png/first-sites/bgc.png);
+  margin-top: -40px;
+  width: 100%;
+  height: 1000px;
+}
+// 
+.first-tablinks {
+  background-color: none;
+  border: none;
+  color: white;
+  background-image: url(/images/png/first-sites/bgc.png);
+// 
+  &:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+}
+// 
+.sidenav-text {
+  color: white;
+  margin-top: 200px;
+}
+// 
+.sidenav-number {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+// 
+.sidenav-name {
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+}
+
+.header-home_text {
+  color: white;
+  text-align: center;
+  padding-top: 350px;
+  font-size: 50px;
+}
+
+.header-home_img {
+  padding-left: 45%;
+  padding-top: 300px;
+  padding-right: 20px;
+}
+
+.header-home_a {
+  &:hover {
+    color: yellow;
+    text-decoration: underline;
+  }
+
+}
+.text_about {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 130%;
+}
+// 
+.service {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+// 
+.service_foto {
+  margin-right: 44px;
+  -o-transform: translate(-20px, 20px);
+  -ms-transform: translate(-20px, 20px);
+  -moz-transform: translate(-20px, 20px);
+  -webkit-transform: translate(-20px, 20px);
+  transform: translate(-20px, 20px); 
+}
+// 
+.service_text {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+// 
+.service_border {
+  box-sizing: border-box;
+  width: 396px;
+  height: 300px;
+  left: 772px;
+  top: 1638px;
+  opacity: 0.5;
+  border: 1px solid #CDAA7D;
+  display: inline-block;
+  margin: 0 40px 2em 0;
+}
+// 
+.icon_panel {
+  text-align: center;
+  margin-top: 150px;
+}
+// 
+.our_work {
+  margin-top: 100px;
+}
+// 
+.our_work_text {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+// 
+.our_work_panel {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.our_work_panel_name {
+  margin-right: 70px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.our_work_panel_name:hover {
+  text-decoration:underline;
+  color: yellow;
+}
+// 
+.our_work_img {
+  text-align: center;
+}
+// 
+.our_work_img_align {
+  margin-right: 24px;
+  margin-top: 24px;
+}
+// 
+.bottom_body_second {
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #111;
+  color: white;
+}
+// 
+.line_body {
+  width: 70%;
+  margin-top: 100px;
+  border: 1px solid #FFFFFF;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.vector {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    text-align: center;
+  }
+  .our_work_panel_name {
+    display: flex;
+  }
+  .bottom_body:not(.show) {
+    display: block;
+  }
+}
+
+.contact_deloty {
+  background-color: #111;
+  margin-top: -40px;
+  padding-top: 20px;
+}
+
+
+
+
+.line {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
+}
+
+.title {
+  padding-left: 25%;
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.title-contact {
+  padding-left: 30%;
+}
+
+
+.png_map {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.table-top {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;  
+  margin-top: 100px;
+  padding-top: 20px;
+  justify-content: space-between;
+
+  ul {
+    text-align: left;
+  }
+}
+
+.table_title {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  list-style: none;
+}
+
+.table {
+  list-style: none;
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+
+
+.master {
+  margin-top: -40px;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+}
+
+.masters {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.masters_foto {
+  width: 90%;
+}
+
+.masters_text {
+  font-family: 'Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 120%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.masters_p {
+  color: white;
+}
+
+.price {
+  background-color: #111;
+  padding-top: 20px;
+  margin-top: -40px;
+}
+
+.price-display {
+  margin-top: 50px;
+}
+.price-first {
+  margin-top: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+
+ 
+}
+
+.price-right {
+  align-self: center;
+  b {
+    padding-left: 100px;
+  }
+
+  h4 {
+    padding-top: 30px;
+    color: white;
+    font-size: 30px;
+  }
+  h5 {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  hr {
+    margin-top: 10px;
+  } 
+
+}
+.price-second {
+  margin-top: 100px;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-around;
+}
